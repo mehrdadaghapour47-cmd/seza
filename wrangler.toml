@@ -13,3 +13,6 @@ database_id = "f48741a6-c697-40bb-a595-b4f05c11b3e1"
 [vars]
 AI_PROVIDER = "workers-ai"
 FREE_CREDITS = "10"
+
+[build]
+command = 'sed -i -E "/^import /d; s/^export (async function|function|class|const|let) /\1 /" saza-worker.js'
