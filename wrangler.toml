@@ -17,3 +17,6 @@ DEV_MODE = "1"
 
 [build]
 command = 'sed -i -E "/^import /d; s/^export (async function|function|class|const|let) /\1 /" saza-worker.js'
+"observability": {
+  "enabled": false
+},
